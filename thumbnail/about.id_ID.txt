@@ -1,0 +1,34 @@
+Title: Generator Gambar Mini
+Author: Taufik Nurrohman
+URL: http://mecha-cms.com
+Version: 1.0.0
+
+====
+
+> Mengubah ukuran dan memotong gambar dengan cepat.
+
+#### Pola URL
+
+ - `/t/<lebar>/<jalur>` → mengubah ukuran gambar secara proporsional
+ - `/t/<lebar>/<tinggi>/<jalur>` → mengubah ukuran dan memotong gambar secara proporsional
+ - `/t/<x>/<y>/<lebar>/<tinggi>/<jalur>` → memotong gambar tanpa mengubah ukuran
+
+#### Contoh
+
+~~~ .no-highlight
+{{url}}t/200/path/to/image.jpg
+{{url}}t/200/200/path/to/image.jpg
+{{url}}t/30/60/200/400/path/to/image.jpg
+~~~
+
+#### Keterangan
+
+ - `<lebar>` → lebar gambar
+ - `<tinggi>` → tinggi gambar
+ - `<x>` → posisi horizontal dari tepi gambar asli
+ - `<y>` → posisi vertikal dari tepi gambar asli
+ - `<jalur>` → path gambar, relatif ke folder `lot\assets`.
+
+*[URL]: Uniform Resource Locator
+
+<!-- block:donate -->
