@@ -12,9 +12,9 @@ Thumbnail Generator Plugin for Mecha CMS
 #### Example
 
 ~~~ .no-highlight
-{{url}}t/200/path/to/image.jpg
-{{url}}t/200/200/path/to/image.jpg
-{{url}}t/30/60/200/400/path/to/image.jpg
+http://localhost/t/200/path/to/image.jpg
+http://localhost/t/200/200/path/to/image.jpg
+http://localhost/t/30/60/200/400/path/to/image.jpg
 ~~~
 
 #### Description
