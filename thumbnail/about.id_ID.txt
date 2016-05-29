@@ -1,7 +1,7 @@
 Title: Generator Gambar Mini
 Author: Taufik Nurrohman
 URL: http://latitudu.com
-Version: 1.0.1
+Version: 1.0.2
 
 ====
 
@@ -27,7 +27,7 @@ Version: 1.0.1
  - `<tinggi>` → tinggi gambar
  - `<x>` → posisi horizontal dari tepi gambar asli
  - `<y>` → posisi vertikal dari tepi gambar asli
- - `<jalur>` → path gambar, relatif ke folder `lot\assets`.
+ - `<jalur>` → jalur gambar, relatif ke folder `lot\assets`.
 
 *[URL]: Uniform Resource Locator
 

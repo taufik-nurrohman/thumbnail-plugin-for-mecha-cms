@@ -22,8 +22,8 @@ Route::accept('t/(:num)/(:all)', function($size = 0, $path = "") {
         exit;
     }
     Weapon::fire('thumbnail_before', array($G, $G));
-    Image::take($path)->resize((int) $size)->draw();
-});
+    Image::take($path)->resize($size)->draw();
+}, 12);
 
 Route::accept('t/(:num)/(:num)/(:all)', function($width = 0, $height = 0, $path = "") {
     $path = Filter::colon('thumbnail:path', ASSET . DS . File::path($path));
@@ -36,8 +36,8 @@ Route::accept('t/(:num)/(:num)/(:all)', function($width = 0, $height = 0, $path 
         exit;
     }
     Weapon::fire('thumbnail_before', array($G, $G));
-    Image::take($path)->crop((int) $width, (int) $height)->draw();
-});
+    Image::take($path)->crop($width, $height)->draw();
+}, 11);
 
 Route::accept('t/(:num)/(:num)/(:num)/(:num)/(:all)', function($x = 0, $y = 0, $width = 0, $height = 0, $path = "") {
     $path = Filter::colon('thumbnail:path', ASSET . DS . File::path($path));
@@ -50,5 +50,5 @@ Route::accept('t/(:num)/(:num)/(:num)/(:num)/(:all)', function($x = 0, $y = 0, $
         exit;
     }
     Weapon::fire('thumbnail_before', array($G, $G));
-    Image::take($path)->crop((int) $x, (int) $y, (int) $width, (int) $height)->draw();
-});
+    Image::take($path)->crop($x, $y, $width, $height)->draw();
+}, 10);
